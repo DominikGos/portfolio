@@ -3,5 +3,7 @@
 </script>
 
 <template>
-  test
+  <p class=" text-4xl">
+    test
+  </p>
 </template>
