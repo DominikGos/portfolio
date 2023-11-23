@@ -39,7 +39,7 @@ function closeModal(): void {
 <template>
   <div :class="backgroundClasses">
     <Transition name="slide" appear>
-      <div v-if="showModal && project" class="flex flex-col gap-5 p-4 w-full bg-white rounded-xl m-auto md:p-6 md:max-w-lg lg:max-w-2xl xl:max-w-6xl">
+      <div v-if="showModal && project" class="flex flex-col gap-5 p-4 w-full shadow-lg bg-white rounded-xl m-auto md:p-6 md:max-w-lg lg:max-w-2xl xl:max-w-6xl">
         <header class="flex items-center relative">
           <h3 class="font-medium text-2xl">{{ project.title }}</h3>
           <div class="absolute right-3">
