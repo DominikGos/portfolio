@@ -1,5 +1,55 @@
 <script setup lang="ts">
 import AboutMeItem from './AboutMeItem.vue';
+import { ref } from 'vue';
+import { onBeforeEnter, onEnter, onLeave } from '@/Transitions/ListTransition';
+
+interface Technology {
+  name: string,
+  iconPath: string,
+}
+
+const technologies = ref<Technology[]>([
+  {
+    name: 'Laravel',
+    iconPath: '/icons/laravel.svg'
+  },
+  {
+    name: 'PHP',
+    iconPath: '/icons/php.svg'
+  },
+  {
+    name: 'Java Script',
+    iconPath: '/icons/js.svg'
+  },
+  {
+    name: 'Vue',
+    iconPath: '/icons/vue.svg'
+  },
+  {
+    name: 'Bootstrap',
+    iconPath: '/icons/bootstrap.svg'
+  },
+  {
+    name: 'Tailwind',
+    iconPath: '/icons/tailwind-css.svg'
+  },
+  {
+    name: 'Sass',
+    iconPath: '/icons/sass.svg'
+  },
+  {
+    name: 'CSS',
+    iconPath: '/icons/css.svg'
+  },
+  {
+    name: 'Symfony',
+    iconPath: '/icons/symfony.svg'
+  },
+  {
+    name: 'Docker',
+    iconPath: '/icons/docker.svg'
+  },
+]);
 </script>
 
 <template>
@@ -13,37 +63,12 @@ import AboutMeItem from './AboutMeItem.vue';
       consectetur adipiscing elit. Nullam orci libero, euismod ac auctor a
     </p>
     <h3 class="text-4xl font-medium">Technologies</h3>
-    <div class="flex flex-col gap-8 p-5 rounded-3xl bg-gray-100">
-      <AboutMeItem :iconPath="'/icons/laravel.svg'">
-        <p>Laravel</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/php.svg'">
-        <p>PHP</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/js.svg'">
-        <p>Java Script</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/vue.svg'">
-        <p>Vue</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/bootstrap.svg'">
-        <p>Bootstrap</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/tailwind-css.svg'">
-        <p>Tailwind</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/sass.svg'">
-        <p>Sass</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/css.svg'">
-        <p>CSS</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/symfony.svg'">
-        <p>Symfony</p>
-      </AboutMeItem>
-      <AboutMeItem :iconPath="'/icons/docker.svg'">
-        <p>Docker</p>
-      </AboutMeItem>
+    <div class="flex flex-col gap-10 p-5 rounded-3xl bg-gray-100" id="technologies">
+      <TransitionGroup :css="false" @before-enter="onBeforeEnter" @enter="onEnter" @leave="onLeave" appear>
+        <AboutMeItem v-for="(technology, index) in technologies" :data-index="index" :iconPath="technology.iconPath" :key="index">
+          <p>{{ technology.name }}</p>
+        </AboutMeItem>
+      </TransitionGroup>
     </div>
   </div>
 </template>
