@@ -6,7 +6,7 @@ const props = defineProps<{
 }>();
 
 const classes = computed<string>(() => {
-  let classes: string = 'flex gap-2 items-center p-3 border-b-2 border-t-2 ';
+  let classes: string = 'flex gap-2 items-center p-3 border-b-2 border-t-2 hover:text-blue-500 ';
   
   if(props.active) {
     classes += 'text-blue-500 border-b-blue-400 border-t-transparent';
@@ -20,7 +20,7 @@ const classes = computed<string>(() => {
 </script>
 
 <template>
-  <div :class="classes">
+  <button type="button" :class="classes">
     <slot></slot>
-  </div>
+  </button>
 </template>

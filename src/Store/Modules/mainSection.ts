@@ -1,6 +1,6 @@
 const mainSection = {
     state: {
-        innerComponentName: null
+        innerComponentName: 'AboutMe'
     },
 
     mutations: {
