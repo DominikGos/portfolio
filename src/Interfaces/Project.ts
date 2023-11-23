@@ -3,5 +3,6 @@ export default interface Project {
   description: string,
   imagePath: string,
   githubLink: string,
+  technologies: string,
   mediaPaths: string[],
 }
