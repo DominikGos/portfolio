@@ -4,10 +4,10 @@ import SquareWrapper from '../SquareWrapper.vue';
 </script>
 
 <template>
-  <div class="flex flex-col rounded-3xl p-5 bg-white mt-8 w-full gap-8 max-md:landscape:w-5/6 lg:w-96">
+  <div class="flex flex-col rounded-3xl p-5 bg-white mt-8 w-full gap-8 max-md:landscape:w-5/6 lg:w-96 shadow-lg">
     <header class="text-center">
       <p class="font-medium text-2xl">Dominik Gos</p>
-      <p class="text-small text-gray-400">Full stack developer.</p>
+      <p class="text-small text-gray-500">Full stack developer.</p>
     </header>
     <main class="flex flex-col gap-3 p-3 rounded-xl bg-gray-100">
       <ProfileCardItem>
