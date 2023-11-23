@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import NavButton from './NavButton.vue';
+import { store } from '@/Store';
 </script>
 
 <template>
