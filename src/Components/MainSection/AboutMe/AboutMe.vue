@@ -53,7 +53,7 @@ const technologies = ref<Technology[]>([
 </script>
 
 <template>
-  <div class="flex flex-col gap-7">
+  <div class="flex flex-col gap-7" id="aboutMe">
     <header>
       <h3 class="text-4xl font-medium">About me</h3>
     </header>
