@@ -9,7 +9,7 @@ const props = defineProps<{
 <template>
   <div class="p-5 rounded-xl bg-gray-100 xl:w-[calc(50%-20px)]">
     <div class="overflow-hidden rounded-xl">
-      <img :src="project.imagePath" :alt="project.title"
+      <img v-if="project.images" :src="project.images[0]" :alt="project.title"
         class="hover:scale-125 transition-all duration-500 cursor-pointer delay-150">
     </div>
     <div class="pt-3">

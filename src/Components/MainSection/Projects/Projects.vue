@@ -9,10 +9,9 @@ const projects = ref<Project[]>([
   {
     title: 'realtime chat front-end',
     description: 'This is the app where you can send messages with other people. Share photos or videos. Manage your own profile.',
-    imagePath: '/projects/Zrzut ekranu 2023-11-21 181755.png',
+    images: ['/projects/Zrzut ekranu 2023-11-21 181755.png'],
     githubLink: 'https://github.com/DominikGos/realtime-chat-frontend',
     technologies: 'vue, typescript, tailwind',
-    mediaPaths: []
   },
  
 ]);

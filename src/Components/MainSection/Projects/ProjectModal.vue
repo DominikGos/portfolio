@@ -64,7 +64,7 @@ function closeModal(): void {
           </p>
           <div class="flex flex-col gap-3 mt-5">
             <div class="rounded-xl shadow-md">
-              <img :src="project.imagePath" :alt="project.title" class="rounded-xl">
+              <img v-if="project.images" :src="project.images[0]" :alt="project.title" class="rounded-xl">
             </div>
           </div>
         </main>
