@@ -7,10 +7,18 @@ const props = defineProps<{
   images: string[]
 }>();
 
+const enum Transitions {
+  slideToLeft = 'slide-to-left',
+  slideToRight = 'slide-to-right',
+}
+
+const currentTransition = ref<string>('slide-to-left');
 const imageIndex = ref<number>(0);
 const imagesLength: number = props.images.length;
 
 function increaseImageIndex(): void {
+  currentTransition.value = Transitions.slideToRight;
+
   if (imageIndex.value + 1 === imagesLength) {
     imageIndex.value = 0;
   } else {
@@ -19,6 +27,8 @@ function increaseImageIndex(): void {
 }
 
 function decreaseImageIndex(): void {
+  currentTransition.value = Transitions.slideToLeft;
+
   if (imageIndex.value - 1 === -1) {
     imageIndex.value = imagesLength - 1;
   } else {
@@ -37,7 +47,7 @@ function decreaseImageIndex(): void {
         <i class="fa-solid fa-angle-left"></i>
       </RoundedButton>
     </SwitchButtonWrapper>
-    <Transition name="slide" mode="out-in">
+    <Transition :name="currentTransition" mode="out-in">
       <img :src="images[imageIndex]" :key="imageIndex">
     </Transition>
     <SwitchButtonWrapper class="right-0">
