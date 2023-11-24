@@ -12,14 +12,10 @@ function isActive(sectionName: string): boolean {
 </script>
 
 <template>
-  <a href="#aboutMe">
-    <NavButton @click="setMainSectionComponentName('AboutMe')" :active="isActive('AboutMe')">
-      <p>About me</p>
-    </NavButton>
-  </a>
-  <a href="#projects">
-    <NavButton @click="setMainSectionComponentName('Projects')" :active="isActive('Projects')">
-      <p>Projects</p>
-    </NavButton>
-  </a>
+  <NavButton @click="setMainSectionComponentName('AboutMe')" :active="isActive('AboutMe')">
+    <p>About me</p>
+  </NavButton>
+  <NavButton @click="setMainSectionComponentName('Projects')" :active="isActive('Projects')">
+    <p>Projects</p>
+  </NavButton>
 </template>
