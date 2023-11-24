@@ -23,6 +23,10 @@ const technologies = ref<Technology[]>([
     iconPath: '/icons/js.svg'
   },
   {
+    name: 'TypeScript',
+    iconPath: '/icons/typescript.svg'
+  },
+  {
     name: 'Vue',
     iconPath: '/icons/vue.svg'
   },
@@ -64,7 +68,7 @@ const technologies = ref<Technology[]>([
       I am Dominik. I have always enjoyed creating. I am interested in art and astronomy. Programming has, in a sense,
       given me the opportunity to bring it all together. I like exploring new technologies because it brings me a lot of
       joy and satisfaction. I am persistent in what I do, and solving complex problems does not pose a challenge for me.
-      Currently, I am working on projects using Laravel, Vue and Tailwind.
+      Currently, I am working on projects using Laravel, Vue, Typescript and Tailwind.
     </p>
     <MainSectionTitle>
       Technologies
