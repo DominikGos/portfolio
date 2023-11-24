@@ -7,15 +7,6 @@ import RoundedButton from '@/Components/Buttons/RoundedButton.vue';
 
 const showModal = ref<boolean>(false);
 const project = ref<Project>();
-project.value = {
-  title: 'realtime chat front-end',
-  description: 'This is the app where you can send messages with other people. Share photos or videos. Manage your own profile.',
-  images: ['/projects/Zrzut ekranu 2023-11-21 181755.png', '/projects/Zrzut ekranu 2023-11-21 180144.png'],
-  githubLink: 'https://github.com/DominikGos/realtime-chat-frontend',
-  technologies: 'vue, typescript, tailwind',
-},
-
-  showModal.value = true;
 
 watch(
   () => store.state.projectModal.project,
