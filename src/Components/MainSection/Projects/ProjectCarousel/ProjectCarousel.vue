@@ -48,7 +48,9 @@ function decreaseImageIndex(): void {
       </RoundedButton>
     </SwitchButtonWrapper>
     <Transition :name="currentTransition" mode="out-in">
-      <img :src="images[imageIndex]" :key="imageIndex">
+      <a :href="images[imageIndex]" target="_blank" :key="imageIndex">
+        <img :src="images[imageIndex]">
+      </a>
     </Transition>
     <SwitchButtonWrapper class="right-0">
       <RoundedButton @click="increaseImageIndex">
