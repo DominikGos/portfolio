@@ -56,7 +56,7 @@ function closeModal(): void {
             </div>
             <div class="flex gap-3 items-center w-2/4">
               <i class="fa-solid fa-code"></i>
-              <p>Laravel </p>
+              <p>{{ project.technologies }}</p>
             </div>
           </div>
           <p class="text-gray-500">

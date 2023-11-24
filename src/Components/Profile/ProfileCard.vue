@@ -12,7 +12,7 @@ import SquareWrapper from '../SquareWrapper.vue';
     <main class="flex flex-col gap-3 p-3 rounded-xl bg-gray-100">
       <ProfileCardItem>
         <SquareWrapper><i class="fa-solid fa-envelope text-yellow-500"></i></SquareWrapper> 
-        <p>my@email.com</p>
+        <p>dominikgos3@gmail.com</p>
       </ProfileCardItem>
       <ProfileCardItem>
         <a target="_blank" href="https://www.google.pl/maps/place/Kielce/@50.8541194,20.5332415,12z/data=!3m1!4b1!4m6!3m5!1s0x47178818af891105:0x5025d8b8c0cdcdf3!8m2!3d50.8660773!4d20.6285676!16zL20vMGp4MF8?entry=ttu">

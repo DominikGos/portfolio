@@ -61,9 +61,10 @@ const technologies = ref<Technology[]>([
       </MainSectionTitle>
     </header>
     <p class="pb-8 border-b-2 border-gray-200 text-gray-500">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra quis mi fringilla porta. Nullam pellentesque,
-      diam ut lobortis porta, massa ipsum egestas purus, at ultrices libero diam in dolor. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Nullam orci libero, euismod ac auctor a
+      I am Dominik. I have always enjoyed creating. I am interested in art and astronomy. Programming has, in a sense,
+      given me the opportunity to bring it all together. I like exploring new technologies because it brings me a lot of
+      joy and satisfaction. I am persistent in what I do, and solving complex problems does not pose a challenge for me.
+      Currently, I am working on projects using Laravel, Vue and Tailwind.
     </p>
     <MainSectionTitle>
       Technologies

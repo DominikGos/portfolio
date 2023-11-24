@@ -7,29 +7,14 @@ import { store } from '@/Store';
 
 const projects = ref<Project[]>([
   {
-    title: 'Chat front-end',
-    description: 'Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum',
+    title: 'realtime chat front-end',
+    description: 'This is the app where you can send messages with other people. Share photos or videos. Manage your own profile.',
     imagePath: '/projects/Zrzut ekranu 2023-11-21 181755.png',
     githubLink: 'https://github.com/DominikGos/realtime-chat-frontend',
-    technologies: 'vue tailwind',
+    technologies: 'vue, typescript, tailwind',
     mediaPaths: []
   },
-  {
-    title: 'Chat front-end',
-    description: 'Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum',
-    imagePath: '/projects/Zrzut ekranu 2023-11-21 181755.png',
-    githubLink: 'https://github.com/DominikGos/realtime-chat-frontend',
-    technologies: 'vue tailwind',
-    mediaPaths: []
-  },
-  {
-    title: 'Chat front-end',
-    description: 'Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum',
-    imagePath: '/projects/Zrzut ekranu 2023-11-21 181755.png',
-    githubLink: 'https://github.com/DominikGos/realtime-chat-frontend',
-    technologies: 'vue tailwind',
-    mediaPaths: []
-  },
+ 
 ]);
 
 function showDetails(project: Project): void {
