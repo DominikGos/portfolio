@@ -31,7 +31,7 @@ const projects = ref<Project[]>([
     technologies: 'laravel, pusher',
   },
   {
-    title: 'Tod-list',
+    title: 'Todo-list',
     description: 'It is a simple application for managing user tasks. I made this project because I wanted to learn how to make single page application with inertia and tailwind.',
     images: [
       'https://raw.githubusercontent.com/DominikGos/todo-list/cb8fcf71513b08cb909d8097fa3a2bc476197b1d/public/images/Zrzut%20ekranu%202023-09-17%20170047.png',
