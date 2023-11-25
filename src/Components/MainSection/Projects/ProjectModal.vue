@@ -73,7 +73,7 @@ function setBodyOverflow(overflowY: 'hidden' | 'auto'): void {
             {{ project.description }}
           </p>
           <div class="flex flex-col gap-3 mt-5">
-            <ProjectCarousel v-if="project.images" :images="project.images" />
+            <ProjectCarousel :images="project.images ?? []" :videos="project.videos ?? []" />
           </div>
         </main>
       </div>

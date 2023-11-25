@@ -15,6 +15,10 @@ const projects = ref<Project[]>([
       '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 181831.png',
       '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 181857.png'
     ],
+    videos: [
+      '/projects/realtime-chat-frontend/app preview.webm',
+      '/projects/realtime-chat-frontend/realtime messages.webm',
+    ],
     githubLink: 'https://github.com/DominikGos/realtime-chat-frontend',
     technologies: 'vue, typescript, tailwind',
   },
@@ -26,6 +30,9 @@ const projects = ref<Project[]>([
       '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222239.png', 
       '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222307.png',
       '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222350.png'
+    ],
+    videos: [
+      '/projects/realtime-chat-backend/screen-recorder-tue-nov-21-2023-22-11-00.webm'
     ],
     githubLink: 'https://github.com/DominikGos/realtime-chat-backend',
     technologies: 'laravel, pusher',
