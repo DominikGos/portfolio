@@ -38,7 +38,7 @@ function decreaseImageIndex(): void {
 
 </script>
 <template>
-  <div class="flex justify-center rounded-xl overflow-hidden shadow-md relative">
+  <div class="flex justify-center transition-all duration-1000 rounded-xl overflow-hidden shadow-md relative bg-white min-h-[9rem] lg:min-h-[20rem] xl:min-h-[38rem]">
     <div class="absolute right-2 top-2 p-3 rounded-xl bg-white border-2 shadow-md z-50">
       {{ imageIndex + 1 }} / {{ imagesLength }}
     </div>

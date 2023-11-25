@@ -12,9 +12,12 @@ watch(
   () => store.state.projectModal.project,
   (projectValue: Project) => {
     if (!projectValue) {
+      setBodyOverflow('auto');
+
       return;
     }
 
+    setBodyOverflow('hidden');
     project.value = projectValue;
     showModal.value = true;
   }
@@ -35,6 +38,10 @@ const backgroundClasses = computed<string>(() => {
 function closeModal(): void {
   store.commit('setProject', null);
   showModal.value = false;
+}
+
+function setBodyOverflow(overflowY: 'hidden' | 'auto'): void {
+  document.body.style.overflowY = overflowY;
 }
 </script>
 
