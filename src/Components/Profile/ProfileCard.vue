@@ -28,6 +28,12 @@ import SquareWrapper from '../SquareWrapper.vue';
         </a>
         <a href="https://github.com/DominikGos" target="_blank">Github</a>
       </ProfileCardItem>
+      <ProfileCardItem>
+        <a href="https://www.linkedin.com/in/dominik-gos-29b301263/" target="_blank">
+          <SquareWrapper><i class="fa-brands fa-linkedin"></i></SquareWrapper> 
+        </a>
+        <a href="https://www.linkedin.com/in/dominik-gos-29b301263/" target="_blank">Linkedin</a>
+      </ProfileCardItem>
     </main>
   </div>
 </template>
