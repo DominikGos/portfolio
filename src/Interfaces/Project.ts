@@ -4,5 +4,6 @@ export default interface Project {
   images?: string[],
   videos?: string[],
   githubLink: string,
+  appLink?: string,
   technologies: string,
 }
