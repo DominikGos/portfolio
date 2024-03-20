@@ -19,6 +19,10 @@ const technologies = ref<Technology[]>([
     iconPath: '/icons/php.svg'
   },
   {
+    name: 'Vue',
+    iconPath: '/icons/vue.svg'
+  },
+  {
     name: 'Java Script',
     iconPath: '/icons/js.svg'
   },
@@ -27,8 +31,8 @@ const technologies = ref<Technology[]>([
     iconPath: '/icons/typescript.svg'
   },
   {
-    name: 'Vue',
-    iconPath: '/icons/vue.svg'
+    name: 'Mysql',
+    iconPath: '/icons/mysql-svgrepo-com.svg'
   },
   {
     name: 'Bootstrap',
@@ -47,12 +51,28 @@ const technologies = ref<Technology[]>([
     iconPath: '/icons/css.svg'
   },
   {
-    name: 'Symfony',
-    iconPath: '/icons/symfony.svg'
+    name: 'HTML',
+    iconPath: '/icons/html-svgrepo-com.svg'
+  },
+  {
+    name: 'Windows',
+    iconPath: '/icons/windows-applications-svgrepo-com.svg'
+  },
+  {
+    name: 'Linux',
+    iconPath: '/icons/linux-svgrepo-com.svg'
   },
   {
     name: 'Docker',
     iconPath: '/icons/docker.svg'
+  },
+  {
+    name: 'AWS',
+    iconPath: '/icons/aws-svgrepo-com.svg'
+  },
+  {
+    name: 'Github',
+    iconPath: '/icons/github-142-svgrepo-com.svg'
   },
 ]);
 </script>
@@ -65,10 +85,10 @@ const technologies = ref<Technology[]>([
       </MainSectionTitle>
     </header>
     <p class="pb-8 border-b-2 border-gray-200 text-gray-500">
-      I am Dominik. I have always enjoyed creating. I am interested in art and astronomy. Programming has, in a sense,
-      given me the opportunity to bring it all together. I like exploring new technologies because it brings me a lot of
-      joy and satisfaction. I am persistent in what I do, and solving complex problems does not pose a challenge for me.
-      Currently, I am working on projects using Laravel, Vue, Typescript and Tailwind.
+      Hi, I am Dominik. I am currently studying computer science at the University of Kielce. I am looking for a job as
+      a full-stack developer. My favorite stack is Laravel and Vue, but I am open to new technologies because I like to
+      develop my skills and knowledge. Below you can see most of the technologies I have dealt with. Select "Projects"
+      in the navigation bar to see these technologies in action.
     </p>
     <MainSectionTitle>
       Technologies
