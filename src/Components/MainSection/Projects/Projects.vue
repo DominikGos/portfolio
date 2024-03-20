@@ -8,10 +8,10 @@ import { store } from '@/Store';
 const projects = ref<Project[]>([
   {
     title: 'Realtime-chat-frontend',
-    description: 'This is the app where you can send messages with other people. Share photos or videos. Manage your own profile. ',
+    description: 'This is an app where you can send messages to other people. Share photos or videos. Manage your own profile. The app is deployed on AWS, so you can test it',
     images: [
-      '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 181755.png', 
-      '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 180144.png', 
+      '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 181755.png',
+      '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 180144.png',
       '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 181831.png',
       '/projects/realtime-chat-frontend/Zrzut ekranu 2023-11-21 181857.png'
     ],
@@ -20,14 +20,15 @@ const projects = ref<Project[]>([
       '/projects/realtime-chat-frontend/realtime messages.webm',
     ],
     githubLink: 'https://github.com/DominikGos/realtime-chat-frontend',
+    appLink: 'https://main.dy35wzlisfwzj.amplifyapp.com',
     technologies: 'vue, typescript, tailwind',
   },
   {
     title: 'Realtime-chat-backend',
-    description: 'This is the "rest API" for the chat project. With this application you can chat with other people. Manage your own profile. Sending files to other users. When a user sends a request to store a message, the API dispatch a "Message Sent" event. These events are broadcast, so the front-end application has the ability to listen to these events and allows users to conduct conversations in real time.',
+    description: 'This is the "rest API" for the chat project. With this application you can chat with other people. Manage your own profile. Sending files to other users. When a user sends a request to store a message, the API dispatch a "Message Sent" event. These events are broadcast, so the front-end application has the ability to listen to these events and allows users to conduct conversations in real time. The application is deployed to the AWS cloud ec2 service. This API can only be used via a front-end application.',
     images: [
-      '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222155.png', 
-      '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222239.png', 
+      '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222155.png',
+      '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222239.png',
       '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222307.png',
       '/projects/realtime-chat-backend/Zrzut ekranu 2023-11-24 222350.png'
     ],
@@ -35,15 +36,15 @@ const projects = ref<Project[]>([
       '/projects/realtime-chat-backend/screen-recorder-tue-nov-21-2023-22-11-00.webm'
     ],
     githubLink: 'https://github.com/DominikGos/realtime-chat-backend',
-    technologies: 'laravel, pusher',
+    technologies: 'laravel',
   },
   {
     title: 'Todo-list',
     description: 'It is a simple application for managing user tasks. I made this project because I wanted to learn how to make single page application with inertia and tailwind.',
     images: [
       'https://raw.githubusercontent.com/DominikGos/todo-list/cb8fcf71513b08cb909d8097fa3a2bc476197b1d/public/images/Zrzut%20ekranu%202023-09-17%20170047.png',
-      'https://raw.githubusercontent.com/DominikGos/todo-list/cb8fcf71513b08cb909d8097fa3a2bc476197b1d/public/images/Zrzut%20ekranu%202023-09-17%20165713.png', 
-      'https://raw.githubusercontent.com/DominikGos/todo-list/cb8fcf71513b08cb909d8097fa3a2bc476197b1d/public/images/Zrzut%20ekranu%202023-09-17%20165933.png', 
+      'https://raw.githubusercontent.com/DominikGos/todo-list/cb8fcf71513b08cb909d8097fa3a2bc476197b1d/public/images/Zrzut%20ekranu%202023-09-17%20165713.png',
+      'https://raw.githubusercontent.com/DominikGos/todo-list/cb8fcf71513b08cb909d8097fa3a2bc476197b1d/public/images/Zrzut%20ekranu%202023-09-17%20165933.png',
     ],
     githubLink: 'https://github.com/DominikGos/todo-list',
     technologies: 'laravel, vue, inertia, tailwind',

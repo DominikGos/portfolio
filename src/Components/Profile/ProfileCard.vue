@@ -30,7 +30,7 @@ import SquareWrapper from '../SquareWrapper.vue';
       </ProfileCardItem>
       <ProfileCardItem>
         <a href="https://www.linkedin.com/in/dominik-gos-29b301263/" target="_blank">
-          <SquareWrapper><i class="fa-brands fa-linkedin"></i></SquareWrapper> 
+          <SquareWrapper><i class="fa-brands fa-linkedin text-blue-500"></i></SquareWrapper> 
         </a>
         <a href="https://www.linkedin.com/in/dominik-gos-29b301263/" target="_blank">Linkedin</a>
       </ProfileCardItem>

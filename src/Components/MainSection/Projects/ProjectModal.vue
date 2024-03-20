@@ -59,12 +59,16 @@ function setBodyOverflow(overflowY: 'hidden' | 'auto'): void {
           </div>
         </header>
         <main class="flex flex-col gap-3">
-          <div class="flex flex-wrap justify-between gap-8">
-            <div class="flex gap-3 items-center w-1/4">
+          <div class="flex flex-wrap flex-col gap-8 lg:flex-row lg:justify-evenly">
+            <div v-if="project.appLink" class="flex gap-3 items-center">
+              <i class="fa-solid fa-globe"></i>
+              <a :href="project.appLink" target="_blank">App link</a>
+            </div>
+            <div class="flex gap-3 items-center">
               <i class="fa-brands fa-github"></i>
               <a :href="project.githubLink" target="_blank">Github</a>
             </div>
-            <div class="flex gap-3 items-center w-2/4">
+            <div class="flex gap-3 items-center">
               <i class="fa-solid fa-code"></i>
               <p>{{ project.technologies }}</p>
             </div>
